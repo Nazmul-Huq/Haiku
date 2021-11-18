@@ -34,8 +34,6 @@ public class Menu {
                 break;
             case 3: // print all saved haiku
                 printHaikuInformation.printHaikus();
-            case 4:
-                haikuMethods.analyzeHaiku();
             default: break;
         }
     }

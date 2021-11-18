@@ -29,10 +29,10 @@ public class PrintHaikuInformation{
         firstLine = firstLine.substring(0, 1).toUpperCase() + firstLine.substring(1); // make first letter uppercase
 
         String middleLine = haikuEntities[3]; // get middle line from Haiku
-        middleLine = middleLine.substring(0, 1).toUpperCase() + firstLine.substring(1); // make middle letter uppercase
+        middleLine = middleLine.substring(0, 1).toUpperCase() + middleLine.substring(1); // make middle letter uppercase
 
         String lastLine = haikuEntities[4]; // get last line from Haiku
-        lastLine = lastLine.substring(0, 1).toUpperCase() + firstLine.substring(1); // make last letter uppercase
+        lastLine = lastLine.substring(0, 1).toUpperCase() + lastLine.substring(1); // make last letter uppercase
 
         // finally print all information
         System.out.println("Writer Name: " + name);
@@ -68,6 +68,12 @@ public class PrintHaikuInformation{
             System.out.println("..................................."); // print to make the output looking nice
         }
 
+    }
+
+    public void printHaikuRulesViolation(ArrayList haikuErrors){
+        for (int i = 0; i < haikuErrors.size(); i++) {
+            System.out.println(haikuErrors.get(i));
+        }
     }
 
 }
